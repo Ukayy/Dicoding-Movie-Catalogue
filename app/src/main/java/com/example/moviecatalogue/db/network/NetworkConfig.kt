@@ -1,4 +1,4 @@
-package com.example.moviecatalogue.network
+package com.example.moviecatalogue.db.network
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

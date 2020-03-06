@@ -1,4 +1,4 @@
-package com.example.moviecatalogue.network
+package com.example.moviecatalogue.db.network
 import com.example.moviecatalogue.model.MovieDetail
 import com.example.moviecatalogue.model.MovieResponse
 import com.example.moviecatalogue.model.TVResponse

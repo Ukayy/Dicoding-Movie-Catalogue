@@ -1,4 +1,4 @@
-package com.example.moviecatalogue.helper
+package com.example.moviecatalogue.db.helper
 
 import android.database.Cursor
 import com.example.moviecatalogue.db.DatabaseContract

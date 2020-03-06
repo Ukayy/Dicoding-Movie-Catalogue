@@ -1,4 +1,4 @@
-package com.example.moviecatalogue.helper
+package com.example.moviecatalogue.db.helper
 
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase

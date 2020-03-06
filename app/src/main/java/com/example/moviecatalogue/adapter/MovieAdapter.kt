@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.moviecatalogue.R
 import com.example.moviecatalogue.model.Movie
-import com.example.moviecatalogue.utils.Constant
+import com.example.moviecatalogue.db.utils.Constant
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_movie.view.*
 

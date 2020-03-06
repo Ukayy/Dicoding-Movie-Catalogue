@@ -12,10 +12,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.moviecatalogue.R
 import com.example.moviecatalogue.adapter.SeasonAdapter
-import com.example.moviecatalogue.helper.TvHelper
+import com.example.moviecatalogue.db.helper.TvHelper
 import com.example.moviecatalogue.model.Season
 import com.example.moviecatalogue.model.TVShowDetail
-import com.example.moviecatalogue.utils.Constant
+import com.example.moviecatalogue.db.utils.Constant
 import com.example.moviecatalogue.viewmodel.TvDetailViewModel
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_tv_show_detail.*

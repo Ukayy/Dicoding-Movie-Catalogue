@@ -6,19 +6,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 
 import com.example.moviecatalogue.R
 import com.example.moviecatalogue.adapter.TVShowAdapter
-import com.example.moviecatalogue.adapter.TabAdapter
-import com.example.moviecatalogue.helper.TvHelper
+import com.example.moviecatalogue.db.helper.TvHelper
 import com.example.moviecatalogue.model.TVShow
 import com.example.moviecatalogue.ui.tvshow.TvShowDetailActivity
 import com.example.moviecatalogue.viewmodel.FavoriteViewModel
-import kotlinx.android.synthetic.main.fragment_favorite_main.*
 import kotlinx.android.synthetic.main.fragment_favorite_t_v.*
 
 /**

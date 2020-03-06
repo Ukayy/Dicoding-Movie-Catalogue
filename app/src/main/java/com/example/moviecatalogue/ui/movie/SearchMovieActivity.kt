@@ -7,14 +7,12 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.moviecatalogue.R
 import com.example.moviecatalogue.adapter.MovieAdapter
 import com.example.moviecatalogue.model.Movie
 import com.example.moviecatalogue.viewmodel.SearchMovieViewModel
 import kotlinx.android.synthetic.main.activity_search_movie.*
-import java.util.*
 import kotlin.collections.ArrayList
 
 

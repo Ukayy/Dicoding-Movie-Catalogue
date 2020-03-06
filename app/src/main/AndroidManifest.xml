@@ -11,18 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.tvshow.SearchTvActivity"></activity>
+        <activity android:name="com.example.moviecatalogue.ui.tvshow.SearchTvActivity"></activity>
         <activity
-            android:name=".ui.movie.SearchMovieActivity"
-            android:parentActivityName=".ui.MainActivity" />
+            android:name="com.example.moviecatalogue.ui.movie.SearchMovieActivity"
+            android:parentActivityName="com.example.moviecatalogue.ui.MainActivity" />
         <activity
-            android:name=".ui.tvshow.TvShowDetailActivity"
-            android:parentActivityName=".ui.MainActivity" />
+            android:name="com.example.moviecatalogue.ui.tvshow.TvShowDetailActivity"
+            android:parentActivityName="com.example.moviecatalogue.ui.MainActivity" />
         <activity
-            android:name=".ui.movie.MovieDetailActivity"
-            android:parentActivityName=".ui.MainActivity" />
+            android:name="com.example.moviecatalogue.ui.movie.MovieDetailActivity"
+            android:parentActivityName="com.example.moviecatalogue.ui.MainActivity" />
         <activity
-            android:name=".ui.MainActivity"
+            android:name="com.example.moviecatalogue.ui.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

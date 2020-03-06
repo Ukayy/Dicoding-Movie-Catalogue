@@ -1,4 +1,4 @@
-package com.example.moviecatalogue.utils
+package com.example.moviecatalogue.db.utils
 
 import java.util.*
 

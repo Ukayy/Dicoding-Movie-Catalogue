@@ -3,9 +3,9 @@ package com.example.moviecatalogue.viewmodel
 import android.content.Context
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.moviecatalogue.helper.MappingHelper
-import com.example.moviecatalogue.helper.MovieHelper
-import com.example.moviecatalogue.helper.TvHelper
+import com.example.moviecatalogue.db.helper.MappingHelper
+import com.example.moviecatalogue.db.helper.MovieHelper
+import com.example.moviecatalogue.db.helper.TvHelper
 import com.example.moviecatalogue.model.MovieResponse
 import com.example.moviecatalogue.model.TVResponse
 import kotlinx.coroutines.Dispatchers

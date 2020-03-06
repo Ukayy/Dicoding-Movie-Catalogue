@@ -11,9 +11,9 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.moviecatalogue.R
-import com.example.moviecatalogue.helper.MovieHelper
+import com.example.moviecatalogue.db.helper.MovieHelper
 import com.example.moviecatalogue.model.MovieDetail
-import com.example.moviecatalogue.utils.Constant
+import com.example.moviecatalogue.db.utils.Constant
 import com.example.moviecatalogue.viewmodel.MovieDetailViewModel
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_movie_detail.*

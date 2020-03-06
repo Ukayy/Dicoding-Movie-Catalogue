@@ -6,10 +6,10 @@ import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.moviecatalogue.db.DatabaseContract
-import com.example.moviecatalogue.helper.MappingHelper
-import com.example.moviecatalogue.helper.TvHelper
+import com.example.moviecatalogue.db.helper.MappingHelper
+import com.example.moviecatalogue.db.helper.TvHelper
 import com.example.moviecatalogue.model.TVShowDetail
-import com.example.moviecatalogue.network.NetworkConfig
+import com.example.moviecatalogue.db.network.NetworkConfig
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

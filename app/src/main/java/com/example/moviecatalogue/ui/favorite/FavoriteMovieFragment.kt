@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 
 import com.example.moviecatalogue.R
 import com.example.moviecatalogue.adapter.MovieAdapter
-import com.example.moviecatalogue.helper.MovieHelper
+import com.example.moviecatalogue.db.helper.MovieHelper
 import com.example.moviecatalogue.model.Movie
 import com.example.moviecatalogue.ui.movie.MovieDetailActivity
 import com.example.moviecatalogue.viewmodel.FavoriteViewModel

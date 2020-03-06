@@ -1,4 +1,4 @@
-package com.example.moviecatalogue.helper
+package com.example.moviecatalogue.db.helper
 
 import android.content.ContentValues
 import android.content.Context
@@ -6,29 +6,29 @@ import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteException
 import android.database.sqlite.SQLiteOpenHelper
-import com.example.moviecatalogue.db.DatabaseContract.MovieColumns.Companion.MOVIE_ID
-import com.example.moviecatalogue.db.DatabaseContract.MovieColumns.Companion.TABLE_MOVIE
 import com.example.moviecatalogue.db.DatabaseContract.MovieColumns.Companion._ID
+import com.example.moviecatalogue.db.DatabaseContract.TvColumns.Companion.TABLE_TV
+import com.example.moviecatalogue.db.DatabaseContract.TvColumns.Companion.TV_ID
 
 
-class MovieHelper(context: Context) {
+class TvHelper (context: Context){
     companion object {
-        private const val DATABASE_TABLE = TABLE_MOVIE
+        private const val DATABASE_TABLE = TABLE_TV
         private lateinit var databaseHelper: DatabaseHelper
-        private var INSTANCE: MovieHelper? = null
+        private var INSTANCE: TvHelper? = null
 
         private lateinit var database: SQLiteDatabase
 
-        fun getInstance(context: Context): MovieHelper {
+        fun getInstance(context: Context): TvHelper {
             if (INSTANCE == null) {
                 synchronized(SQLiteOpenHelper::class.java) {
                     if (INSTANCE == null) {
                         INSTANCE =
-                            MovieHelper(context)
+                            TvHelper(context)
                     }
                 }
             }
-            return INSTANCE as MovieHelper
+            return INSTANCE as TvHelper
         }
     }
 
@@ -57,12 +57,12 @@ class MovieHelper(context: Context) {
             null,
             null,
             null,
-            null
+            "$_ID ASC"
         )
     }
 
     fun getById(id: String): Cursor {
-        val query = "SELECT * FROM $TABLE_MOVIE WHERE $MOVIE_ID = $id"
+        val query = "SELECT * FROM $TABLE_TV WHERE $TV_ID = $id"
         return database.rawQuery(query, null)
     }
 
@@ -73,6 +73,6 @@ class MovieHelper(context: Context) {
 
     fun deleteById(id: String):Int{
         return database.delete(
-            DATABASE_TABLE, "$MOVIE_ID = '$id'", null)
+            DATABASE_TABLE, "$TV_ID = '$id'", null)
     }
 }
